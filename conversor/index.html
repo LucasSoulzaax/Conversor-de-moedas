@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moedas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-straight/css/uicons-thin-straight.css'>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <main class="card">
+        <div class="container">
+            <h1>Conversor de Moedas</h1>
+
+            <div class="campo">
+                <div class="input-container">
+                    <input type="number" id="solic_conv" placeholder="Digite o valor" class="input">
+                    <select id="pais_entrada" class="select">
+                        <option value="USD">
+                            <div>
+                                <p>USD</p>
+                                <img src="images/Flag_of_the_United_States.svg.png" alt="">
+                            </div>
+                        </option>
+                        <option value="BRL">
+                        <div>
+                            <p>BRL</p>
+                            <img src="images/images.jpg" alt="">
+                        </div>    
+                        </option>
+                        <option value="EUR">
+                        <div>
+                            <p>EUR</p>
+                            <img src="images/Flag_of_Europe.svg.png" alt="">
+                        </div>    
+                        </option>
+                    </select>
+                </div>
+                <i  class="fi fi-ts-exchange"></i>
+                <div class="input-container">
+                    <input type="text" id="result_conv" placeholder="Resultado" class="input" readonly>
+                    <select id="pais_saida" class="select">
+                        <option value="USD">
+                            <div>
+                                <p>USD</p>
+                                <img src="images/Flag_of_the_United_States.svg.png" alt="bandeira dos Estados Unidos">
+                            </div>
+                        </option>
+                        <option value="BRL">
+                            <div>
+                                <p>BRL</p>
+                                <img src="images/images.jpg" alt="">
+                            </div>
+                        </option>
+                        <option value="EUR">
+                        <div>
+                            <p>EUR</p>
+                            <img src="images/Flag_of_Europe.svg.png" alt="">
+                        </div>    
+                        </option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="grafico_moedas">
+                <h2>Taxa de câmbio</h2>
+                <canvas id="myChart"></canvas>
+
+                <div class="periodos">
+                    <button class="periodo-btn" data-period="1d">1 Dia</button>
+                    <button class="periodo-btn" data-period="5d">5 Dias</button>
+                    <button class="periodo-btn" data-period="1m">1 Mês</button>
+                    <button class="periodo-btn" data-period="1y">1 Ano</button>
+                    <button class="periodo-btn" data-period="5y">5 Anos</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
