@@ -1,6 +1,6 @@
 # 🌍 Conversor de Moedas 💱
 
-Este é um Conversor de Moedas simples, onde você pode ver as taxas de câmbio atuais, converter valores entre diferentes moedas e visualizar o histórico de taxas. A aplicação utiliza a API de taxas de câmbio para fornecer as informações mais atualizadas e também permite ver gráficos com as variações de taxa ao longo do tempo.
+Este é um Conversor de Moedas simples, onde você pode ver as taxas de câmbio atuais, converter valores entre diferentes moedas e visualizar o histórico de taxas. A aplicação utiliza a API de taxas de câmbio para fornecer as informações mais atualizadas.
 
 ## 🚀 Tecnologias Utilizadas:
 - **HTML5** 🏗️
